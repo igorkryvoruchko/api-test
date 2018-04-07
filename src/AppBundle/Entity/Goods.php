@@ -102,17 +102,18 @@ class Goods
     }
 
     /**
-     * Set createdAt
-     *
      * @param \DateTime $createdAt
-     *
-     * @return Goods
      */
     public function setCreatedAt($createdAt)
     {
         $this->createdAt = $createdAt;
+    }
 
-        return $this;
+
+
+    public function __construct()
+    {
+        $this->setCreatedAt(new \DateTime());
     }
 
     /**
