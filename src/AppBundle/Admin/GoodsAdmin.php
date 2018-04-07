@@ -19,8 +19,8 @@ class GoodsAdmin extends AbstractAdmin
     protected function configureFormFields(FormMapper $formMapper)
     {
         $formMapper->add('name', TextType::class)
-                    ->add('price', TextType::class)
-                    ->add('createdAt', 'datetime');
+                    ->add('price', TextType::class);
+
 
     }
 
